@@ -29,6 +29,29 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.mortgage-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mortgage-item.inactive {
+    background-color: #e0e0e0; 
+    border-color: #b0b0b0; 
+    opacity: 0.8; 
+}
+
+.mortgage-item.inactive h2 {
+    color: #555; 
+}
+
+.mortgage-item.inactive p {
+    color: #777; 
+}
+
+.mortgage-item.inactive strong {
+    color: #555; 
 }
 
 .mortgage-item h2 {

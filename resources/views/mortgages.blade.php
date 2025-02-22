@@ -11,8 +11,8 @@
         <h1>Список ипотек</h1>
         <div class="mortgages-list">
             @foreach($mortgages as $mortgage)
-            <div class="mortgage-item">
-                <h2>Ипотека {{ $mortgage->ID }}</h2>
+            <div class="mortgage-item {{ $mortgage->IS_ACTIVE ? '' : 'inactive' }}">
+                <h2>{{ $mortgage->TITLE }}</h2>
                 <p>Процентная ставка: {{ $mortgage->PERCENT }}</p>
                 <p>Стоимость недвижимости: от {{ $mortgage->MIN_PRICE }} руб. до {{ $mortgage->MAX_PRICE }} руб.</p>
                 <p>Первоначальный взнос: от {{ $mortgage->MIN_FIRST_PAYMENT }}% до 98%</p>

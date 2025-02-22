@@ -9,6 +9,8 @@ Route::get('/mortgages', [ClientController::class, 'mortgages_get'])->name('home
 # получить конкретную ипотеку
 Route::get('/mortgages/{id}', [ClientController::class, 'mortgages_details'])->where('id', '[0-9]+')->name('mortgages.details');
 
+# для более удобного просмотра, отображаются все ипотеки (неактивные серым)
+Route::get('/mortgages_all', [MortgagesController::class, 'mortgages_get_all'])->name('mortgages.all');
 # отобразить форму создания ипотеки
 Route::get('/mortgages/create', [MortgagesController::class, 'mortgages_create']);
 # отправить данные для создания ипотеки

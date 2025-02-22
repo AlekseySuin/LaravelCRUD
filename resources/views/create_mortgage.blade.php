@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавить ипотеку</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -12,40 +12,40 @@
         <form action="{{ route('home') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="title">Название ипотеки:</label>
-                <input type="text" id="title" name="title" required>
+                <label for="TITLE">Название ипотеки:</label>
+                <input type="text" id="TITLE" name="TITLE" required>
             </div>
             <div class="form-group">
-                <label for="description">Описание:</label>
-                <textarea id="description" name="description"></textarea>
+                <label for="DESCRIPTION">Описание:</label>
+                <textarea id="DESCRIPTION" name="DESCRIPTION"></textarea>
             </div>
             <div class="form-group">
-                <label for="percent">Процентная ставка (%):</label>
-                <input type="number" id="percent" name="percent" min="0" max="40" required>
+                <label for="PERCENT">Процентная ставка (%):</label>
+                <input type="number" id="PERCENT" name="PERCENT" min="0" max="40" required>
             </div>
             <div class="form-group">
-                <label for="min_first_payment">Минимальный первоначальный взнос (%):</label>
-                <input type="number" id="min_first_payment" name="min_first_payment" min="0" max="98" required>
+                <label for="MIN_FIRST_PAYMENT">Минимальный первоначальный взнос (%):</label>
+                <input type="number" id="MIN_FIRST_PAYMENT" name="MIN_FIRST_PAYMENT" min="0" max="98" required>
             </div>
             <div class="form-group">
-                <label for="min_price">Минимальная стоимость недвижимости:</label>
-                <input type="number" id="min_price" name="min_price" step="0.01" required>
+                <label for="MIN_PRICE">Минимальная стоимость недвижимости:</label>
+                <input type="number" id="MIN_PRICE" name="min_price" step="0.01" required>
             </div>
             <div class="form-group">
-                <label for="max_price">Максимальная стоимость недвижимости:</label>
-                <input type="number" id="max_price" name="max_price" step="0.01" required>
+                <label for="MAX_PRICE">Максимальная стоимость недвижимости:</label>
+                <input type="number" id="MAX_PRICE" name="MAX_PRICE" step="0.01" required>
             </div>
             <div class="form-group">
-                <label for="min_term">Минимальный срок ипотеки (лет):</label>
-                <input type="number" id="min_term" name="min_term" required>
+                <label for="MIN_TERM">Минимальный срок ипотеки (лет):</label>
+                <input type="number" id="MIN_TERM" name="MIN_TERM" required>
             </div>
             <div class="form-group">
-                <label for="max_term">Максимальный срок ипотеки (лет):</label>
-                <input type="number" id="max_term" name="max_term" required>
+                <label for="MAX_TERM">Максимальный срок ипотеки (лет):</label>
+                <input type="number" id="MAX_TERM" name="MAX_TERM" required>
             </div>
             <div class="form-group">
-                <label for="is_active">Активна:</label>
-                <input type="checkbox" id="is_active" name="is_active" value="1">
+                <label for="IS_ACTIVE">Активна:</label>
+                <input type="checkbox" id="IS_ACTIVE" name="IS_ACTIVE" value="1">
             </div>
             <button type="submit" class="btn">Добавить ипотеку</button>
         </form>

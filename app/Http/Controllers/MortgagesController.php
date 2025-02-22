@@ -38,6 +38,11 @@ class MortgagesController extends Controller
         return redirect("mortgages");
     }
 
+    function mortgages_get_all(){
+        $mortgages = Mortgage::get();
+        return view("mortgages", ['mortgages'=>$mortgages]);
+    }
+
     function mortgages_create(){
         return view('create_mortgage');
     } 
