@@ -62,4 +62,10 @@ class MortgagesController extends Controller
 
         return redirect()->route('home');
     }
+
+    function morgages_delete($id){
+        $mortgage = Mortgage::find($id);
+        $mortgage->delete();
+        return redirect()->route('home');
+    }
 }

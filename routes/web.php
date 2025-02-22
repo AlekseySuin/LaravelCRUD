@@ -18,3 +18,6 @@ Route::post('/mortgages', [MortgagesController::class, 'mortgages_add']);
 Route::get('/mortgages/{id}/edit', [MortgagesController::class, 'mortgages_edit_form'])->where('id', '[0-9]+')->name('mortgages.edit');
 # обновить ипотеку в базе
 Route::put('/mortgages/{id}', [MortgagesController::class, 'mortgages_update'])->where('id', '[0-9]+')->name('mortgages.update');
+
+# удаление ипотеки по id 
+Route::get('/mortgages/{id}/delete', [MortgagesController::class, 'morgages_delete'])->where('id', '[0-9]+')->name('mortgages.delete');
