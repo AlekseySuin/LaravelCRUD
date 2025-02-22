@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.mortgages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mortgage-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.mortgage-item h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.mortgage-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.mortgage-detail {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.mortgage-detail h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.mortgage-detail p {
+    margin: 5px 0;
+    color: #666;
+}
